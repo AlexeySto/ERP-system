@@ -1,0 +1,76 @@
+table.editable-fields tbody td {
+    padding: 4px 12px !important;
+    border-color: #c6c6c6;
+    border-width: 1px;
+    white-space: nowrap;
+}
+
+table.editable-fields th {
+    border-color: #c6d4e7 !important;
+    border-width: 1px !important;
+}
+
+table.editable-fields tbody tr:hover td{
+    box-sizing: border-box;
+    border-bottom-color: #7070d5 !important;
+}
+
+table.editable-fields tbody input[type="color"] {
+    padding: 0;
+    width: 100%;
+    border: 0 !important;
+    border-radius: 0;
+}
+
+table.editable-fields tbody input[type="color"]::-webkit-color-swatch {
+    border-radius: 0 !important;
+}
+
+table.editable-fields tbody input[type="text"] {
+    border: 0;
+}
+
+table.editable-fields tbody input[type="number"] {
+    border: 0;
+}
+
+table.editable-fields tbody select {
+    width: 100%;
+    border: 0 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+table.editable-fields tbody .select2-selection--single {
+    border: 0 !important;
+    background-color: var(--bs-custom-white);
+    align-content: center;
+}
+
+.select2-selection--single {
+    align-content: center;
+}
+
+table.editable-fields tbody .select2-selection__rendered {
+    padding-right: 30px !important;
+}
+
+table.editable-fields tbody td:has(input[type="text"]) {
+    padding: 0 !important;
+}
+
+table.editable-fields tbody td:has(input[type="number"]) {
+    padding: 0 !important;
+}
+
+table.editable-fields tbody td:has(input[type="color"]) {
+    padding: 0 !important;
+}
+
+table.editable-fields tbody td:has(input[type="checkbox"]) {
+    text-align: center;
+}
+
+table.editable-fields tbody td:has(select) {
+    padding: 0 !important;
+}

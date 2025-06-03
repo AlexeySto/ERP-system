@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  db:
+    image: mysql:8
+    restart: always
+    container_name: ${APP_NAME:-MP}.db
+    ports:
+     - ${DB_PORT:-3306}:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - ./docker/mysql:/var/lib/mysql/
+
+networks:
+  MP:
+    external: true

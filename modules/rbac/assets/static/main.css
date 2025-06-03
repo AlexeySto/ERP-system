@@ -1,0 +1,26 @@
+.row-expand {
+    margin-right: 5px;
+}
+
+.row-expand.level-1 {
+
+}
+.row-expand.level-2 {
+    margin-left: 18px;
+}
+.row-expand.level-3 {
+    margin-left: 58px;
+}
+
+.table th {
+    align-content: start;
+    text-align: center;
+}
+
+th span {
+    white-space: nowrap;
+}
+
+.table tr>td {
+    white-space: nowrap;
+}

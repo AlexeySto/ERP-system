@@ -1,0 +1,3 @@
+#product-edit .required.has-error {
+    border: 1px solid #ff5555;
+}

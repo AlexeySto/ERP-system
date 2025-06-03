@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdocumentor
+        configVersion="3"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="https://www.phpdoc.org"
+>
+    <title>МП</title>
+    <paths>
+        <output>docs/api</output>
+    </paths>
+    <version number="1.0.0">
+        <guide>
+            <source dsn=".">
+                <path>docs/tutorial</path>
+            </source>
+            <output>guide</output>
+        </guide>
+        <api>
+            <source dsn=".">
+              <path>assets</path>
+              <path>commands</path>
+              <path>components</path>
+              <path>controllers</path>
+              <path>models</path>
+              <path>views</path>
+              <path>widgets</path>
+            </source>
+            <visibilities>public</visibilities>
+            <visibilities>protected</visibilities>
+            <visibilities>private</visibilities>
+        </api>
+    </version>
+    <setting name="guides.enabled" value="true"/>
+    <template>
+        <name>default</name>
+    </template>
+</phpdocumentor>
